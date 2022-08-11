@@ -15,8 +15,8 @@ namespace Selenium2
         public void LaunchChrome()
         {
             IWebDriver driver = new ChromeDriver();
-            driver.Navigate().GoToUrl("https://www.skyscanner.de/fluge");
-            WebElement dateBox = (WebElement)driver.FindElement(By.XPath("/html/body/div[3]/div[2]/div/div/div[1]/div[2]/div/div/div/div/form/div[2]/div[2]/div/div[1]/button/span"));
+            driver.Navigate().GoToUrl("");
+            IWebElement dateBox = driver.FindElement(By.XPath(""));
             Thread.Sleep(2000);
             DateTime y = DateTime.Today;
             dateBox.SendKeys(y.ToString());
